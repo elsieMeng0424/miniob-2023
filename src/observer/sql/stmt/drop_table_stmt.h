@@ -39,7 +39,7 @@ public:
 
   const std::string &table_name() const { return table_name_; }
 
-  static RC create(Db *db, const DropTableSqlNode &create_table, Stmt *&stmt);
+  static RC create(Db *db, const DropTableSqlNode &drop_table, Stmt *&stmt);
 
 private:
   std::string table_name_;
